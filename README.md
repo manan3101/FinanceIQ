@@ -10,7 +10,7 @@ Beyond its functional prowess, FinanceIQ stands as a testament to the power of i
 
 Embrace the future of financial research with FinanceIQ – where effortless information retrieval converges with unparalleled convenience to unlock the boundless potential of financial news analysis.
 
-#Installation and setup
+# Installation and setup
 Follow these steps to install and run the FinanceIQ project:
 1. Clone the repository to your local machine using the following command:
    ```bash

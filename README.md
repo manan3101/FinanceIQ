@@ -45,7 +45,7 @@ This project operates in two main phases:
 
 2. **Answering Queries**:
    - The OpenAI model is employed to answer queries from the selected chunk.
-   - An instance of the OpenAI model is created with specific parameters (`llm = OpenAI(model="gpt-3.5-turbo-instruct", temperature=0.9, max_tokens=500)`).
+   - An instance of the OpenAI model is created with specific parameters `OpenAI(model="gpt-3.5-turbo-instruct")`.
    - Queries are answered using this model.
 
 3. **Displaying Answers**:

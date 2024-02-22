@@ -23,7 +23,7 @@ This project operates in two main phases:
 
 1. **Data Extraction from URL**:
    - User provides a URL.
-   - The project utilizes `UnstructuredURLLoader()` to load and extract data from the provided URL article.
+   - The project utilizes `UnstructuredURLLoader()` and `load()` to load and extract data from the provided URL article.
    - The loaded data is then prepared for further processing.
 
 2. **Text Chunking**:

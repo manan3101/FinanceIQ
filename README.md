@@ -30,13 +30,10 @@ This project operates in two main phases:
    - The loaded data is split into manageable chunks using `split_documents()`.
    - This step breaks down the text into smaller sections, facilitating efficient processing.
 
-3. **Embedding Generation**:
+3. **Embedding Generation and Vector Database Creation**:
    - Embeddings are created for all the text chunks using `OpenAIEmbeddings()`.
    - Embeddings capture the semantic representations of the text, enabling meaningful analysis.
-
-4. **Vector Database Creation**:
-   - A vector database is constructed using `FAISS`.
-   - This database indexes the embeddings of the text chunks, allowing for fast and effective retrieval of relevant information.
+   - A vector database is constructed using `FAISS`, indexing the embeddings of the text chunks for fast and effective retrieval of relevant information.
 
 ## Phase 2: Retrieval of Knowledge
 

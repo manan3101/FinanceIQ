@@ -16,6 +16,28 @@ Follow these steps to install and run the FinanceIQ project:
    ```
 
 
+Project Workflow
+This project operates in two main phases:
+
+Phase 1: Creating Knowledge Base
+Data Extraction from URL:
+
+User provides a URL.
+The project utilizes UnstructuredURLLoader() to load and extract data from the provided URL article.
+The loaded data is then prepared for further processing.
+Text Chunking:
+
+The loaded data is split into manageable chunks using split_documents().
+This step breaks down the text into smaller sections, facilitating efficient processing.
+Embedding Generation:
+
+Embeddings are created for all the text chunks using OpenAIEmbeddings().
+Embeddings capture the semantic representations of the text, enabling meaningful analysis.
+Vector Database Creation:
+
+A vector database is constructed using FAISS.
+This database indexes the embeddings of the text chunks, allowing for fast and effective retrieval of relevant information.
+
 
 
 

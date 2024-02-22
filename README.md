@@ -15,28 +15,30 @@ Follow these steps to install and run the FinanceIQ project:
    streamlit run main.py
    ```
 
+# Project Workflow
 
-Project Workflow
 This project operates in two main phases:
 
-Phase 1: Creating Knowledge Base
-Data Extraction from URL:
+## Phase 1: Creating Knowledge Base
 
-User provides a URL.
-The project utilizes UnstructuredURLLoader() to load and extract data from the provided URL article.
-The loaded data is then prepared for further processing.
-Text Chunking:
+1. **Data Extraction from URL**:
+   - User provides a URL.
+   - The project utilizes `UnstructuredURLLoader()` to load and extract data from the provided URL article.
+   - The loaded data is then prepared for further processing.
 
-The loaded data is split into manageable chunks using split_documents().
-This step breaks down the text into smaller sections, facilitating efficient processing.
-Embedding Generation:
+2. **Text Chunking**:
+   - The loaded data is split into manageable chunks using `split_documents()`.
+   - This step breaks down the text into smaller sections, facilitating efficient processing.
 
-Embeddings are created for all the text chunks using OpenAIEmbeddings().
-Embeddings capture the semantic representations of the text, enabling meaningful analysis.
-Vector Database Creation:
+3. **Embedding Generation**:
+   - Embeddings are created for all the text chunks using `OpenAIEmbeddings()`.
+   - Embeddings capture the semantic representations of the text, enabling meaningful analysis.
 
-A vector database is constructed using FAISS.
-This database indexes the embeddings of the text chunks, allowing for fast and effective retrieval of relevant information.
+4. **Vector Database Creation**:
+   - A vector database is constructed using `FAISS`.
+   - This database indexes the embeddings of the text chunks, allowing for fast and effective retrieval of relevant information.
+
+By completing these steps, the project establishes a robust knowledge base from the provided URL articles. This knowledge base serves as the foundation for the subsequent phase of the project.
 
 
 

@@ -38,10 +38,17 @@ This project operates in two main phases:
    - A vector database is constructed using `FAISS`.
    - This database indexes the embeddings of the text chunks, allowing for fast and effective retrieval of relevant information.
 
-By completing these steps, the project establishes a robust knowledge base from the provided URL articles. This knowledge base serves as the foundation for the subsequent phase of the project.
+## Phase 2: Retrieval of Knowledge
 
+1. **Selection of Relevant Embeddings**:
+   - The relevant embedding of the chunk is selected using `RetrievalQAWithSourcesChain`.
 
+2. **Answering Queries**:
+   - The OpenAI model is employed to answer queries from the selected chunk.
+   - An instance of the OpenAI model is created with specific parameters (`llm = OpenAI(model="gpt-3.5-turbo-instruct", temperature=0.9, max_tokens=500)`).
+   - Queries are answered using this model.
 
+3. **Displaying Answers**:
+   - The answers are displayed on the prompt for user interaction.
 
-
-
+By following these steps, the project effectively retrieves and presents relevant information based on user queries, leveraging the established knowledge base.

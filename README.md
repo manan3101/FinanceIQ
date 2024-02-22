@@ -13,6 +13,7 @@ Follow these steps to install and run the FinanceIQ project:
 4. Run the project using Streamlit:
    ```bash
    streamlit run main.py
+   ```
 
 
 
